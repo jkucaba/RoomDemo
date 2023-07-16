@@ -4,6 +4,8 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProvider.NewInstanceFactory.Companion.instance
 
 @Database(entities = [EmployeeEntity::class], version = 1) //1 wersja naszej bazy, stąd 1 w wersji
 abstract class EmployeeDatabase: RoomDatabase() {
